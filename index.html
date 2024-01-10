@@ -21,6 +21,7 @@
             margin: 100px auto;
             border-radius: 22px;
             box-shadow: 0 4px 8px 0 rgba(174, 105, 105, 0.2), 0 6px 20px 0 rgba(174, 105, 105, 0.2);
+          
             /* box-shadow: 0 52px 52px rgba(174, 105, 105, 0.2); */
 
         }
@@ -31,6 +32,24 @@
             padding: 10px;
             border-radius: 22px 22px 0 0;
             background-color: #bf8fbd;
+            color: white;
+        }
+
+        .list-item {
+            padding: 10px;
+            margin: 15px 10px;
+            border: 1px solid hotpink;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            transition-duration: 0.4s;
+            background-color: aliceblue;
+           
+        }
+
+        .list-item:hover {
+            background-color: rgb(154, 81, 139);
+            color: white;
         }
     </style>
 </head>
@@ -41,11 +60,25 @@
             ToDo App
         </div>
 
-        <div class="list-container">
-
+        <div class="list-container" id="list-container">
+            <div class="list-item">First Task </div>
+           
         </div>
 
     </div>
+
+
+    <script>
+        const todolist = ["Go to gym", "Learn javascript", "Complete the assidnment", "Attend the icp class"];
+
+        const listContainer = document.getElementById["list-container"];
+
+        for (const task of todolist) {
+
+        }
+
+
+    </script>
 </body>
 
 </html>
